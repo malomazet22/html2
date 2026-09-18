@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Signaler un incident - ZooTickoon</title>
+  <link rel="stylesheet" href="zootickoon.css">
+</head>
+<body>
+<header>
+    <h1>Parc animalier de Val-Sorin</h1>
+    <nav aria-label="Menu principal">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="secteurs.html">Secteurs</a></li>
+            <li><a href="ticket.html">Signaler un incident</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2>Signaler un incident</h2>
+    <p>
+        Vous avez constaté un problème concernant un secteur du parc ?
+        Utilisez ce formulaire pour transmettre votre signalement.
+    </p>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Informations sur l'incident</legend>
+            <p>
+                <label for="secteur">Secteur concerné :</label>
+                <select id="secteur" name="secteur" required>
+                    <option value="">-- Choisir un secteur --</option>
+                    <option value="SAV">Savane</option>
+                    <option value="TRO">Forêt tropicale</option>
+                    <option value="BAN">Banquise</option>
+                    <option value="FER">Ferme pédagogique</option>
+                    <option value="VOL">Grande volière</option>
+                    <option value="AQU">Aquarium</option>
+                </select>
+            </p>
+            <p>
+                <label>Priorité :</label><br>
+                <input type="radio" id="basse" name="priorite" value="basse" required>
+                <label for="basse">Basse</label>
+                <input type="radio" id="moyenne" name="priorite" value="moyenne">
+                <label for="moyenne">Moyenne</label>
+                <input type="radio" id="haute" name="priorite" value="haute">
+                <label for="haute">Haute</label>
+            </p>
+            <p>
+                <label for="description">Description de l'incident :</label>
+                <br>
+                <textarea id="description" name="description" rows="6" cols="50"
+                    placeholder="Décrivez ce qui s'est passé..." required></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Contact</legend>
+            <p>
+                <label for="email">Adresse e-mail :</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+        </fieldset>
+        <p>
+            <button type="submit">Envoyer le signalement</button>
+            <button type="reset">Effacer</button>
+        </p>
+    </form>
+</main>
+<footer>
+    <p>Parc animalier de Val-Sorin</p>
+</footer>
+</body>
+</html>
