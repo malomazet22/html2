@@ -1,0 +1,14 @@
+:root {
+    --fond: #faf6ee;
+    --fond-carte: #ffffff;
+    --fond-alt: #f0e8d8;
+    --texte: #3d372c;
+    --texte-doux: #8a8175;
+    --accent: #c17f4a;
+    --accent-fonce: #a8683a;
+    --accent-doux: #ecdfc9;
+    --ombre: rgba(61, 55, 44, 0.08);
+    --ombre-forte: rgba(61, 55, 44, 0.16);
+    --police-titre: "Fraunces", Georgia, serif;
+    --police: "Inter", "Segoe UI", Arial, sans-serif;
+}
